@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>ORCOMSv1.0</title>
+  <link href="styles.css"rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="main.js"></script> 
+  
+  	 <link rel="stylesheet" type="text/css" href="easyLocator/easyLocator.css">  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="easyLocator/easyLocator.js"></script>
+   <script src="easyLocator/markerclusterer.min.js"></script>
+</head>
+
+<body>
+  <div id='window' name='window'>
+    <div id='sidebar' name='sidebar'>
+      <ul>
+        <li>UserName:</li>
+        <li>UserLevel:</li>
+        <br />
+        <li>I.P. Address:</li>
+        <br />
+        <li>FacilityName:</li>
+        <li>FacilityLocation:</li>
+        <li>Coordinates</li>
+        <br />
+        <li>Status:</li>
+        <li>ProductionLevel:</li>
+        <br />
+        <li>Employees On-Site:</li>
+        <br />
+        <li>Time:</li>
+        <li>Date:</li>
+      </ul>
+    </div>
+    <div id='middle' name='middle'>
+      <div id='readings' name='readings'>
+      
+      </div>
+      <div id='chat' name='chat'>
+        <div id='chatbox' name='chatbox'>
+          
+        </div>
+        <input type='text' id='chattext' name='chattext' />
+        <input type='button' name='chatsend' id='chatsend' value='Send >' />
+      </div>
+    </div>
+    <div id='right' name='right'>
+      <div id='cam' name='cam'>
+        <video id='vid' name='vid' controls>
+          <source src'' type''>
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div id='vmap' name='vmap'>
+        <div id="locatorList"></div>
+      </div>
+    </div>
+  </div>
+</body>
+	<script>      
+      $( document ).ready(function() {
+        $('#locatorList').easyLocator({
+           spreadsheetId: '1GsuoK3XyWJoiie1eq0qrd-2DxRVSQ0Ut7DkGI23Gq0s',
+           useMarkerCluster: true                     
+        });
+      });
+   </script>
+</html>

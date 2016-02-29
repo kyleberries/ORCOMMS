@@ -1,0 +1,58 @@
+body{
+  background-image:url(http://www.designbolts.com/wp-content/uploads/2012/11/Free-Topographic-Map-Seamless-pattern.jpg);
+}
+li{
+    list-style-type:none;
+}
+#sidebar{
+  color:#DDDDDD;
+  width:200px;
+  height:100%;
+  float:left;
+}
+#middle{
+  width:40%;
+  height:100%;
+  float:left;
+}
+#right{
+  width:40%;
+  height:100%;
+  float:left;
+}
+#readings{
+  background-color:#444444;
+  min-height:20em;
+  border:2px black solid;
+  margin:1em;
+  margin-bottom:2em;
+}
+#chat{
+  background-color:#444444;
+  min-height:20em;
+  border:2px black solid;
+  margin:1em;
+}
+#cam{
+  background-color:#444444;
+  min-height:20em;
+  border:2px black solid;
+  margin:1em;
+  margin-bottom:2em;
+}
+#vid{
+  height:19em;
+  width:30em;
+}
+#vmap{
+  height:20em;
+  width:30em;
+  border:2px black solid;
+  margin:1em;
+}
+#chatbox{
+  height:18em;
+}
+#chattext{
+  width:80%;
+}
